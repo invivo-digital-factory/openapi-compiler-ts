@@ -1,0 +1,20 @@
+.npmrc
+.vscode
+
+# Coverage
+.nyc_output
+coverage
+mocha.xml
+xunit.xml
+.DS_Store
+
+node_modules/
+dist/
+
+yarn-error.log
+
+
+.idea/
+
+**/.env*
+!.env.example

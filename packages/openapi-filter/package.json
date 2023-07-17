@@ -1,0 +1,40 @@
+{
+  "name": "@invivodf/module-openapi-filter",
+  "version": "4.1.0",
+  "description": "Filter internal paths, operations, parameters, schemas etc from OpenAPI/Swagger definitions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc -p tsconfig.build.json",
+    "lint": "npx eslint src/*.js test/*.js",
+    "test": "npx mocha --require ts-node/register"
+  },
+  "author": "Mike Ralphson",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "atlassian-openapi": "^1.0.17",
+    "reftools": "^1.1.9",
+    "yaml": "^2.2.0",
+    "yargs": "^17.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mermade/openapi-filter.git"
+  },
+  "keywords": [
+    "openapi",
+    "openapi3",
+    "swagger",
+    "asyncapi",
+    "filter",
+    "internal"
+  ],
+  "publishConfig": {
+    "@invivodf:registry": "https://gitlab.tooling.invivodigitalfactory.com/api/v4/projects/303/packages/npm/"
+  },
+  "bugs": {
+    "url": "https://github.com/mermade/openapi-filter/issues"
+  },
+  "homepage": "https://github.com/mermade/openapi-filter#readme"
+}

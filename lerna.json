@@ -1,0 +1,16 @@
+{
+  "npmClient": "npm",
+  "packages": [
+    "packages/modules/*",
+    "packages/services/*"
+  ],
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "publish": {
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "chore(release): publish",
+      "registry": "https://gitlab.tooling.invivodigitalfactory.com/api/v4/projects/231/packages/npm/"
+    }
+  }
+}

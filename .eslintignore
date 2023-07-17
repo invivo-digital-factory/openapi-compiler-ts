@@ -1,0 +1,10 @@
+.*/
+coverage
+dist
+docker
+docs
+node_modules
+public
+reference
+scripts
+/*.*

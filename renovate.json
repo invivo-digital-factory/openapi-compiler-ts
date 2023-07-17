@@ -1,0 +1,38 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":disableDependencyDashboard"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "rebaseWhen": "behind-base-branch",
+  "minor": {
+    "enabled": true,
+    "automerge": true
+  },
+  "patch": {
+    "enabled": true,
+    "automerge": true
+  },
+  "js": {
+    "packageRules": [
+      {
+        "updateTypes": [
+          "major"
+        ],
+        "automerge": true
+      }
+    ]
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["postgres"],
+      "updateTypes": [
+        "major"
+      ],
+      "enabled": false
+    }
+  ]
+}
